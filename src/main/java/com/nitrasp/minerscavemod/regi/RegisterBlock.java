@@ -21,9 +21,14 @@ public class RegisterBlock {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
             MinersCave.MOD_ID);
 
+    /** Caveポータルフレーム */
     public static final RegistryObject<Block> CAVE_PORTAL_FRAME = registerBlock("cave_portal_frame",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.AMETHYST)));
+            () -> new Block(BlockBehaviour.Properties
+                    .copy(Blocks.STONE)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()));
 
+    /** Caveポータルエッジ */
     public static final RegistryObject<Block> CAVE_PORTAL_EDGE = registerBlock("cave_portal_edge",
             () -> new CavePortalFrame());
 

@@ -1,13 +1,12 @@
 package com.nitrasp.minerscavemod.regi.tab;
 
 import com.nitrasp.minerscavemod.main.MinersCave;
-import com.nitrasp.minerscavemod.regi.RegisterBlock;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -24,10 +23,9 @@ public class MinersCaveTabs {
                         .icon(() -> new ItemStack(Blocks.CHERRY_PLANKS))
                         .title(Component.translatable("itemGroup.miners_cave"))
                         .displayItems((param, output) -> {
-                            for (Item item : MinersCaveItems.item) {
+                            for (ItemLike item : MinersCaveItems.itemList) {
                                 output.accept(item);
                             }
-                            output.accept(RegisterBlock.CAVE_PORTAL_FRAME.get());
                         })
                         .build();
             });
@@ -40,7 +38,7 @@ public class MinersCaveTabs {
                         // TODO このタブの前にくるタブを指定する。メインのタブの後に来るように設定。
                         .withTabsBefore(MinersCaveTabs.MINERS_CAVE_TAB.getId())
                         .displayItems((param, output) -> {
-                            for (Item item : MinersCaveItems.item) {
+                            for (ItemLike item : MinersCaveItems.itemList) {
                                 output.accept(item);
                             }
                         })

@@ -23,3 +23,9 @@ run
 
 # Files from Forge MDK
 forge*changelog.txt
+README.txt
+changelog.txt
+CREDITS.txt
+LICENSE.txt
+.vscode/launch.json
+.vscode/settings.json

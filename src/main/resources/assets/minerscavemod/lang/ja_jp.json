@@ -1,4 +1,7 @@
 {
     "itemGroup.miners_cave":"Miner's Cave",
-    "itemGroup.miners_cave_sub":"Miner's Cave Sub"
+    "itemGroup.miners_cave_sub":"Miner's Cave Sub",
+
+    "block.minerscavemod.cave_portal_frame": "洞窟ポータルフレーム",
+    "block.minerscavemod.cave_portal_edge": "洞窟ポータルエッジ"
 }

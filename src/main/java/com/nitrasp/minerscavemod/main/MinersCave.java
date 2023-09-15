@@ -1,6 +1,7 @@
 package com.nitrasp.minerscavemod.main;
 
 import com.nitrasp.minerscavemod.regi.RegisterBlock;
+import com.nitrasp.minerscavemod.regi.RegisterDimension;
 import com.nitrasp.minerscavemod.regi.RegisterItems;
 import com.nitrasp.minerscavemod.regi.tab.MinersCaveTabs;
 
@@ -20,6 +21,7 @@ public class MinersCave {
         RegisterItems.ITEMS.register(bus);
         RegisterBlock.BLOCKS.register(bus);
         MinersCaveTabs.MOD_TABS.register(bus);
+        RegisterDimension.register();
     }
 
 }

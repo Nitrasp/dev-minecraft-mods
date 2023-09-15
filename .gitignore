@@ -1,0 +1,32 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# Files from Forge MDK
+forge*changelog.txt
+README.txt
+changelog.txt
+CREDITS.txt
+LICENSE.txt
+.vscode/launch.json
+.vscode/settings.json
+forge-1.20.1-47.1.46_mapped_official_1.20.1.jar
